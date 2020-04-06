@@ -1,0 +1,19 @@
+<h2 class="mb-5">Welcome to Groundpe</h2>
+
+<form name="log-in-form" onsubmit="return validateLogIn()">    
+
+    <div class= "field-container d-flex flex-column mb-4">
+        <span>Username:</span>
+        <input type="text" name="username" required>
+    </div>
+
+    <div class= "field-container d-flex flex-column mb-4">
+        <span>Password:</span>
+        <input type="text" name="password" required>
+    </div>
+
+    <input class="mb-3" type="submit" value="Log in" />
+    
+</form>
+<p id="log-err-msg"></p>
+<p>Don't have an account? <a href="javascript:void(0)" onclick="signUp('serverfiles/sign-up.html', signUpDisplay)">Click here</a></p>

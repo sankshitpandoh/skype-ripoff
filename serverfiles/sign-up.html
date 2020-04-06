@@ -1,0 +1,25 @@
+<div id="sign-up-box" class="d-flex flex-column align-items-center">
+    <h2 class="mb-2">Welcome to Groundpe</h2>
+    <h3 class="mb-3">Create your account:</h3>
+
+    <form name="sign-up-form" onsubmit="return validateSignUp()">
+
+        <div class= "field-container d-flex flex-column mb-4">
+            <span>Username:</span>
+            <input type="text" name="user-name" />
+        </div>
+
+        <div class= "field-container d-flex flex-column mb-4">
+            <span>Password:</span>
+            <input type="password" placeholder="password" name="user-password" />
+        </div>
+
+        <div class= "field-container d-flex flex-column mb-4">
+            <span>Re-Enter Password:</span>
+            <input type="password" placeholder="confirm password" name="user-re-password" />
+        </div>
+
+        <input class="mb-3" type="submit" value="Sign Up" />
+    </form>
+
+</div>
