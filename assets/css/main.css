@@ -33,6 +33,9 @@ span{
     border-bottom: 2px solid white;
     height: 50px;
 }
+.options a{
+    color: black;
+}
 .right-bar{
     background-color: black;
     height: 100vh;
