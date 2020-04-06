@@ -25,8 +25,8 @@
                 <div class="row">
 
                     <div class="col-3 px-0">
-                        <div class="left-bar px-2">
-                            <div class="user-info-section d-flex align-items-center justify-content-between pb-3">
+                        <div class="left-bar">
+                            <div class="user-info-section d-flex align-items-center justify-content-between pb-3 px-2">
                                 <figure>
                                     <img src="assets/images/chat-avatar.png" />
                                 </figure>
@@ -34,10 +34,9 @@
                                     <p id="user-name"></p>
                                     <p id="status"></p>
                                 </div>
-
-                                <i class="fa fa-bars"></i>
+                                <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
                             </div>
-                            <div class="options d-flex align-items-center">
+                            <div class="options d-flex align-items-center px-2">
                                 <ul class="d-flex justify-content-between w-100 px-2">
                                     <li><a href="javascript:void()"><i class="fa fa-comment"></a></i></li>
                                     <li><a href="javascript:void(0)"><i class="fa fa-phone"></i></a></li>
@@ -52,18 +51,19 @@
                     </div>
 
                     <div class="col-9 px-0">
-                        <div class="right-bar d-flex flex-column justify-content-center align-items-center">
+                        <div id="right-bar" class="d-flex flex-column justify-content-center align-items-center">
                             <h2 id="greeting-user" class="mb-5">
                             </h2>
                             <figure class="mb-4">
                                 <img src="assets/images/chat-avatar.png" />
                             </figure>
                             <input class="mb-5" id="tag-line" type="text" onkeyup="statusUpdate()"/>
-                            <div id="start-conv">Start a Conversation</div>
+                            <div id="start-conv" onclick="startConv()">Start a Conversation</div>
                         </div>
                     </div>
 
                 </div>
+                <div id="pop-space"></div>
             </div>
         </div>
 
