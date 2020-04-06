@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <title>
+            Groundpe
+        </title>
+
+        <!-- css files start here -->
+        <link rel="stylesheet" href="assets/css/font-face.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class= container>
+                <div class="row">
+
+                    <div class="col-3 px-0">
+                        <div class="left-bar px-2">
+                            <div class="user-info-section d-flex align-items-center justify-content-between pb-3">
+                                <figure>
+                                    <img src="assets/images/chat-avatar.png" />
+                                </figure>
+                                <div class="">
+                                    <p id="user-name"></p>
+                                    <p id="status"></p>
+                                </div>
+
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="options d-flex align-items-center">
+                                <ul class="d-flex justify-content-between w-100 px-2">
+                                    <li><a href="javascript:void()"><i class="fa fa-comment"></a></i></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-phone"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-address-book"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-bell"></i></a></li>
+                                </ul>
+                            </div>
+                            <div id="chats">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-9 px-0">
+                        <div class="right-bar d-flex flex-column justify-content-center align-items-center">
+                            <h2 id="greeting-user" class="mb-5">
+                            </h2>
+                            <figure class="mb-4">
+                                <img src="assets/images/chat-avatar.png" />
+                            </figure>
+                            <input class="mb-5" id="tag-line" type="text" onkeyup="statusUpdate()"/>
+                            <div id="start-conv">Start a Conversation</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

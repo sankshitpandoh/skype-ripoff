@@ -1,18 +1,18 @@
 <h2 class="mb-5">Welcome to Groundpe</h2>
 
-<form name="log-in-form" onsubmit="return validateLogIn()">    
+<form name="log-in-form" onsubmit="return validateLogIn()" action="/main.html">    
 
     <div class= "field-container d-flex flex-column mb-4">
         <span>Username:</span>
-        <input type="text" name="username" required>
+        <input type="text" name="username" required />
     </div>
 
     <div class= "field-container d-flex flex-column mb-4">
         <span>Password:</span>
-        <input type="text" name="password" required>
+        <input type="password" name="password" required />
     </div>
 
-    <input class="mb-3" type="submit" value="Log in" />
+    <input class="mb-3 log-in py-1 px-4" type="submit" value="Log in" />
     
 </form>
 <p id="log-err-msg"></p>

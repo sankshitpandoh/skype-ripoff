@@ -10,6 +10,7 @@ load_data.send()
 function logInDisplay(load_data){
     document.getElementById("intro-box").innerHTML = load_data.responseText
 } 
+
 //If user opts for sign up
 function signUp(url, targetFunction){
     var load_data = new XMLHttpRequest()
@@ -66,10 +67,13 @@ function validateLogIn(){
         return false
     }
     if(user === userName && pass === password ){
-        alert("we in")
+        storeName(user)
     }
     else{
         document.getElementById("log-err-msg").innerHTML = "User doesn't exist"
         return false
     }
+}
+function storeName(user){
+    window.localStorage.setItem("userNAME", user)
 }

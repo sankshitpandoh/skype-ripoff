@@ -1,0 +1,79 @@
+span{
+    color: #ff9800;
+}
+.page-wrapper{
+    background-color: #31313A;
+}
+.left-bar{
+    background-color: #141416;
+    height: 100vh;
+}
+#user-name{
+    width: 175px;
+    font-size: 16px;
+    overflow: hidden;
+}
+#status{
+    height: 25px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.user-info-section{
+    border-bottom: 2px solid white;
+}
+.user-info-section figure{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.user-info-section img{
+    width: 100%;
+}
+.options{
+    border-bottom: 2px solid white;
+    height: 50px;
+}
+.right-bar{
+    background-color: black;
+    height: 100vh;
+    /* margin: 20px 0; */
+}
+.right-bar h2{
+    font-family: Cataclysmo;
+    font-size: 75px;
+}
+.right-bar figure{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #ff9800;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #141416;
+}
+.right-bar #tag-line{
+    width: 220px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.right-bar #start-conv{
+    background-color: #141416;
+    color: #ff9800;
+    font-size: 25px;
+    height: 70px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: Cataclysmo;
+}
+.right-bar #start-conv:hover{
+    background-color: #ff9800;
+    color: black;
+}

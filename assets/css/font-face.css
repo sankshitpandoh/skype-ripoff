@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Cataclysmo;
+    src: url(../fonts/Cataclysmo.eot) format('eot'),
+         url(../fonts/Cataclysmo.svg) format('svg'),
+         url(../fonts/Cataclysmo.ttf) format('ttf'),
+         url(../fonts/Cataclysmo.woff) format('woff'),
+         url(../fonts/Cataclysmo.woff2) format('woff2')
+  }

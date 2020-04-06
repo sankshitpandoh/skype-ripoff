@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+#intro-box{
+    background-color: #31313A;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+#intro-box h2{
+    color: #ff9800;
+    font-family: Cataclysmo;
+    font-size: 50px;
+}
+#intro-box h3{
+    color: aliceblue;
+    font-family: Cataclysmo;
+
+}
+#intro-box span{
+    color: white;
+    font-family: Cataclysmo;
+    font-size: 18px;
+}
+#intro-box input{
+    background-color: #636363;
+    border: none;
+    padding: 5px;
+}
+#intro-box input:focus{
+    background-color: #ff9800;
+    color: black;
+}
+#intro-box .log-in{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: Cataclysmo;
+    font-size: 18px;
+}
+#intro-box .log-in:hover{
+    background-color: white;
+    color: black;
+}
+#intro-box a{
+    color: teal;
+}
+#intro-box a:hover{
+    color: #ff9800;
+}
+#intro-box p{
+    color: white;
+    font-family: Cataclysmo;
+    font-size: 18px;
+}
+#intro-box #log-err-msg{
+    color: red;
+}
