@@ -15,7 +15,7 @@ get_data.onreadystatechange = function(){
         }
     }
 }
-get_data.open("GET","serverfiles/people.json" , true)
+get_data.open("GET","people.json" , true)
 get_data.send()
 
 var tagLine
@@ -49,6 +49,6 @@ function openChat(chat_id){
             document.getElementById("chat-person-name").innerHTML = chat_data.people[chat_id].firstName
         }
     }
-    pull_data.open("GET", "serverfiles/chatPage.html" , true)
+    pull_data.open("GET", "chatPage.html" , true)
     pull_data.send()
 }
