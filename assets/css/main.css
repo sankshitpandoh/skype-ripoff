@@ -1,8 +1,6 @@
 span{
     color: #ff9800;
 }
-/* #pop-space{
-} */
 #pop-up{
     position: absolute;
     top: 0;
@@ -86,6 +84,30 @@ span{
 }
 .user-info-section{
     border-bottom: 2px solid white;
+    position: relative;
+}
+#menu-dp-down{
+    position: absolute;
+    top:35px;
+    right: 7px;
+    display: none;
+    transition: all 0.5s;
+}
+#menu-dp-down a{
+    padding: 5px 20px;
+    display: block;
+    color: #ff9800;
+    background-color: black;
+    transition: all 0.5s;
+    border-bottom: 1px solid #ff9800;
+}
+#menu-dp-down a:hover{
+    background-color: #ff9800;
+    color: black;
+}
+#menu-dp-down ul,li{
+    display: block;
+    font-size: 18px;
 }
 .user-info-section figure{
     height: 50px;
@@ -131,6 +153,7 @@ span{
     background-color: black;
     color: white;
     border-bottom: 2px solid white;
+    text-align: center;
 }
 #right-bar #start-conv{
     background-color: #141416;
