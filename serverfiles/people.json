@@ -1,18 +1,49 @@
 {"people":[
-  { "firstName":"Sankshit Pandoh"},
-  { "firstName":"Shaifali Gorwadia" },
-  { "firstName":"Krunal Kumar Patel" },
-  { "firstName":"Aakash Odedara" },
-  { "firstName":"Aum Shukla" },
-  { "firstName":"Deeba" },
-  { "firstName":"Rahul Kumar" },
-  { "firstName":"Shakti Man" },
-  { "firstName":"Spock" },
-  { "firstName":"Anna" },
-  { "firstName":"Justin Roy"},
-  { "firstName":"TuPac"},
-  { "firstName":"Lil Uzi Vert"},
-  { "firstName":"21 Savage"},
-  { "firstName":"Busta Rhymes"},
-  { "firstName":"Elliot Alderson"}
+  { "firstName":"Sankshit Pandoh",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Shaifali Gorwadia" ,
+    "lastOnline":"online"
+  },
+  { "firstName":"Krunal Kumar Patel" ,
+    "lastOnline":"10:25"
+  },
+  { "firstName":"Aakash Odedara" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Aum Shukla" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Rajvi Dobariya" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Deeba" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Rahul Kumar" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Spock" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Anna" ,
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Justin Roy",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"TuPac",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Lil Uzi Vert",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"21 Savage",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Busta Rhymes",
+    "lastOnline":"few minutes ago"
+  },
+  { "firstName":"Elliot Alderson",
+    "lastOnline":"few minutes ago"}
 ]}

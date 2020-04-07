@@ -33,7 +33,9 @@ load_data.send()
 function editProfile(){
     document.getElementById("right-bar").innerHTML = welcomePage
     document.getElementById("greeting-user").innerHTML = "Welcome, " + "<span>" +userName+ "</span>" 
-    document.getElementById("tag-line").value = tagLine 
+    document.getElementById("tag-line").value = tagLine
+    document.getElementById("right-bar").classList.add("justify-content-center","align-items-center")
+    dpDown()
 }
 
 var tagLine
@@ -76,11 +78,20 @@ function openChat(chat_id){
         if(this.readyState == 4 && this.status == 200){
             document.getElementById("right-bar").innerHTML = this.responseText
             document.getElementById("chat-person-name").innerHTML = chat_data.people[chat_id].firstName
+            document.getElementById("last-online-status").innerHTML = chat_data.people[chat_id].lastOnline
+            document.getElementById("right-bar").classList.remove("justify-content-center","align-items-center")
         }
     }
     pull_data.open("GET", "chatPage.html" , true)
     pull_data.send()
 }
+
+// document.getElementById("chat-message").addEventListener("keyup", function(event){
+//     if(event.keyCode === 13){
+//         event.preventDefault();
+//         document.getElementById("send-chat").click()
+//     }
+// })
 
 function logOut(){
     window.localStorage.removeItem("userNAME")

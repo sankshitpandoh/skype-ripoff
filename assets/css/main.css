@@ -137,7 +137,7 @@ span{
     font-family: Cataclysmo;
     font-size: 75px;
 }
-#right-bar figure{
+#right-bar .profile-pic-holder{
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -172,4 +172,59 @@ span{
 #right-bar #start-conv:hover{
     background-color: #ff9800;
     color: black;
+}
+
+/* single chat on display */
+#right-bar .chat-container{
+    height: 100vh;
+}
+#right-bar .chat-top-bar{
+    background-color: #ff9800;
+}
+#right-bar .top-left h3{
+    font-family: Cataclysmo;
+    font-size: 50px;
+}
+#right-bar .top-left span{
+    color: black;
+}
+#right-bar .top-right figure{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+#right-bar .top-right figure:hover{
+    background-color: black;
+    color: white;
+}
+#right-bar .chat-bottom-bar{
+    height: 50px;
+    border-top: 1px solid #31313A;
+
+}
+#right-bar .chat-bottom-bar #chat-message{
+    width: 500px;
+    border: none;
+    background-color: #31313A;
+    border-radius: 18px;
+    padding: 5px 10px;
+    color: white;
+}
+#right-bar .chat-bottom-bar figure{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #31313A;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#right-bar .chat-bottom-bar figure:hover{
+    background-color: black;
+    color: #ff9800;
 }
