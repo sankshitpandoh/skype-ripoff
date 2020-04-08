@@ -64,7 +64,7 @@ function dpDown(){
 function startConv(){
     document.getElementById("pop-space").innerHTML = "<div id='pop-up'><div id='inner-pop'><div id='inner-top-pop'><i id='close' class='fa fa-times' onclick='closeStartConv()'></i></div><div id='main-top-pop'></div></div></div>" 
     for ( i=0; i < chat_data.people.length; i++){
-        document.getElementById("main-top-pop").innerHTML += "<a class='single-people' href='javascript:void(0)'>" + "<p>" +chat_data.people[i].firstName + "</p></a>"
+        document.getElementById("main-top-pop").innerHTML += "<a class='single-people' href='javascript:void(0)' onclick='openChat(this.id)' id='" + i + "'>" + "<p>" +chat_data.people[i].firstName + "</p></a>"
         }
 }
 
@@ -101,6 +101,7 @@ function openChat(chat_id){
     }
     pull_data.open("GET", "chatPage.html" , true)
     pull_data.send()
+    closeStartConv()
 }
 // function displayChat(chatInformation){
 //     document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + chat_data.people[chat_id].messages[i].message +"</div>"
