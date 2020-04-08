@@ -177,9 +177,14 @@ span{
 /* single chat on display */
 #right-bar .chat-container{
     height: 100vh;
+    position: relative;
 }
 #right-bar .chat-top-bar{
     background-color: #ff9800;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #right-bar .top-left h3{
     font-family: Cataclysmo;
@@ -202,9 +207,24 @@ span{
     background-color: black;
     color: white;
 }
+#right-bar #chat-middle-display{
+    margin-bottom: 50px;
+}
+#right-bar #chat-middle-display .single-message{
+    max-width: 50%;
+    background-color: red;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 #right-bar .chat-bottom-bar{
     height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-top: 1px solid #31313A;
+    background-color: black;
 
 }
 #right-bar .chat-bottom-bar #chat-message{

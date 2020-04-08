@@ -80,18 +80,17 @@ function openChat(chat_id){
             document.getElementById("chat-person-name").innerHTML = chat_data.people[chat_id].firstName
             document.getElementById("last-online-status").innerHTML = chat_data.people[chat_id].lastOnline
             document.getElementById("right-bar").classList.remove("justify-content-center","align-items-center")
-            // var chatInformation = []
-            // for(var i = 0; i <= chat_data.people[chat_id].messages.length; i++){
-            //     chatInformation[i] = chat_data.people[chat_id].messages[i].message
-            // }
-            // diplayChat(chatInformation)
+            var chatInformation = []
+            for(var i = 0; i <chat_data.people[chat_id].messages.length; i++){
+                chatInformation[i] = chat_data.people[chat_id].messages[i].message
+            }
+            displayChat(chatInformation)
 
             //To send message via enter key
             var chatInput = document.getElementById("chat-message")
             chatInput.addEventListener("keyup", function(event){
             if(event.keyCode === 13){
             event.preventDefault();
-            // document.getElementById("send-chat").click()
             sendChat(chat_id)
             document.getElementById("chat-message").value = ""
             }
@@ -103,15 +102,18 @@ function openChat(chat_id){
     pull_data.send()
     closeStartConv()
 }
-// function displayChat(chatInformation){
-//     document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + chat_data.people[chat_id].messages[i].message +"</div>"
 
-// }
+function displayChat(chatInformation){
+    for(var i = 0; i <chatInformation.length; i++){
+        console.log(chatInformation.length)
+    document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + chatInformation[i] +"</div>"
+    }
+}
 
 function sendChat(chat_id){
     var message = document.getElementById("chat-message").value
-    chatInformation[chat_id][i].push(message)
-    console.log(chatInformation)
+    // chatInformation[chat_id][i].push(message)
+    // console.log(chatInformation)
     
 }
 
