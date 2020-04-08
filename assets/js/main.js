@@ -80,18 +80,39 @@ function openChat(chat_id){
             document.getElementById("chat-person-name").innerHTML = chat_data.people[chat_id].firstName
             document.getElementById("last-online-status").innerHTML = chat_data.people[chat_id].lastOnline
             document.getElementById("right-bar").classList.remove("justify-content-center","align-items-center")
+            // var chatInformation = []
+            // for(var i = 0; i <= chat_data.people[chat_id].messages.length; i++){
+            //     chatInformation[i] = chat_data.people[chat_id].messages[i].message
+            // }
+            // diplayChat(chatInformation)
+
+            //To send message via enter key
+            var chatInput = document.getElementById("chat-message")
+            chatInput.addEventListener("keyup", function(event){
+            if(event.keyCode === 13){
+            event.preventDefault();
+            // document.getElementById("send-chat").click()
+            sendChat(chat_id)
+            document.getElementById("chat-message").value = ""
+            }
+            })
+
         }
     }
     pull_data.open("GET", "chatPage.html" , true)
     pull_data.send()
 }
+// function displayChat(chatInformation){
+//     document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + chat_data.people[chat_id].messages[i].message +"</div>"
 
-// document.getElementById("chat-message").addEventListener("keyup", function(event){
-//     if(event.keyCode === 13){
-//         event.preventDefault();
-//         document.getElementById("send-chat").click()
-//     }
-// })
+// }
+
+function sendChat(chat_id){
+    var message = document.getElementById("chat-message").value
+    chatInformation[chat_id][i].push(message)
+    console.log(chatInformation)
+    
+}
 
 function logOut(){
     window.localStorage.removeItem("userNAME")

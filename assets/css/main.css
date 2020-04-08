@@ -215,6 +215,9 @@ span{
     padding: 5px 10px;
     color: white;
 }
+#right-bar .chat-bottom-bar #send-chat{
+    display: none;
+}
 #right-bar .chat-bottom-bar figure{
     height: 30px;
     width: 30px;

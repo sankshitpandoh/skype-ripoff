@@ -27,8 +27,8 @@ function signUpDisplay(load_data){
     document.getElementById("intro-box").innerHTML = load_data.responseText
 }
 
-var userName
-var password
+var userName = window.localStorage.getItem("userNAME")
+var password = window.localStorage.getItem("userPASS")
 
 //sign up form validation
 function validateSignUp(){
@@ -67,13 +67,14 @@ function validateLogIn(){
         return false
     }
     if(user === userName && pass === password ){
-        storeName(user)
+        storeName(user,pass)
     }
     else{
         document.getElementById("log-err-msg").innerHTML = "User doesn't exist"
         return false
     }
 }
-function storeName(user){
+function storeName(user,pass){
     window.localStorage.setItem("userNAME", user)
+    window.localStorage.setItem("userPASS", pass)
 }
