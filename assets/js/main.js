@@ -73,6 +73,17 @@ function dpDown(){
     }    
 }
 
+function singleCall(){
+    if(menuOpen == false){
+        document.getElementById("call-pop-up").style.display = "flex"
+        document.getElementById("call-pop-content").innerHTML = "<i class='fa fa-phone'></i>" + "<h4>"+ chat_data.people[chat_tracker].firstName + "</h4>" +"<div class='cancel-call' onclick='singleCall()'>Cancel</div>"
+        menuOpen = true
+    }
+    else if(menuOpen == true){
+        document.getElementById("call-pop-up").style.display = "none"
+        menuOpen = false
+    }  
+}
 
 function startConv(){
     document.getElementById("pop-space").innerHTML = "<div id='pop-up'><div id='inner-pop'><div id='inner-top-pop'><i id='close' class='fa fa-times' onclick='closeStartConv()'></i></div><div id='main-top-pop'></div></div></div>" 
@@ -85,8 +96,21 @@ function closeStartConv(){
     document.getElementById("pop-space").innerHTML = " "
 }
 
+var chat_tracker
 
 function openChat(chat_id){
+chat_tracker = chat_id
+    for(var i = 0; i < texts.length; i++){
+        console.log(chat_id)
+        if(i == chat_id){
+            var element = document.getElementById(chat_id)
+            element.classList.add("opened-chat")
+        }
+        else{
+            document.getElementById(i).classList.remove("opened-chat")
+        }
+    }
+
     var pull_data = new XMLHttpRequest()
     pull_data.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
@@ -95,8 +119,7 @@ function openChat(chat_id){
             document.getElementById("last-online-status").innerHTML = chat_data.people[chat_id].lastOnline
             document.getElementById("right-bar").classList.remove("justify-content-center","align-items-center")
 
-                displayChat(chat_id)
-
+            displayChat(chat_id)
 
             //To send message via enter key
             var chatInput = document.getElementById("chat-message")
@@ -113,7 +136,6 @@ function openChat(chat_id){
     pull_data.send()
     closeStartConv()
 }
-
 
 function displayChat(chat_id){
     document.getElementById("chat-middle-display").innerHTML = ""
@@ -136,14 +158,6 @@ function sendChat(chat_id){
     texts[chat_id].push(message)
     displayChat(chat_id)
 }
-
-
-    // var node = document.createElement("<div>");
-    // var textnode = document.createTextNode(message);
-    // node.appendChild(textnode);
-    // document.getElementById("myList").appendChild(node);
-
-
 
 function logOut(){
     // window.localStorage.removeItem("userNAME")
