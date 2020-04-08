@@ -4,18 +4,31 @@ document.getElementById("user-name").innerHTML = userName
 
 
 var chat_data = []
+var texts = []
+var chatOpenCounter = []
 
 var get_data = new XMLHttpRequest()
 get_data.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200){
         chat_data = JSON.parse(this.responseText)
+        for(var i = 0; i < chat_data.people.length; i++){
+            texts[i] = []
+        }
         for(i=0; i < chat_data.people.length; i++){
             document.getElementById("chats").innerHTML += "<div class='single-chat' id='"+ i + "'" +"onclick='openChat(this.id)'>" + "<p>" + chat_data.people[i].firstName +"</p></div>"
+            for(var j = 0; j < chat_data.people[i].messages.length ; j++){
+                texts[i].push(chat_data.people[i].messages[j].message)
+            }
+        }
+        for(var i = 0; i <texts.length; i++){
+        chatOpenCounter[i] = texts[i].length 
         }
     }
 }
 get_data.open("GET","people.json" , true)
 get_data.send()
+
+
 
 var welcomePage
 var load_data = new XMLHttpRequest()
@@ -72,6 +85,7 @@ function closeStartConv(){
     document.getElementById("pop-space").innerHTML = " "
 }
 
+
 function openChat(chat_id){
     var pull_data = new XMLHttpRequest()
     pull_data.onreadystatechange = function(){
@@ -80,11 +94,9 @@ function openChat(chat_id){
             document.getElementById("chat-person-name").innerHTML = chat_data.people[chat_id].firstName
             document.getElementById("last-online-status").innerHTML = chat_data.people[chat_id].lastOnline
             document.getElementById("right-bar").classList.remove("justify-content-center","align-items-center")
-            var chatInformation = []
-            for(var i = 0; i <chat_data.people[chat_id].messages.length; i++){
-                chatInformation[i] = chat_data.people[chat_id].messages[i].message
-            }
-            displayChat(chatInformation)
+
+                displayChat(chat_id)
+
 
             //To send message via enter key
             var chatInput = document.getElementById("chat-message")
@@ -94,8 +106,7 @@ function openChat(chat_id){
             sendChat(chat_id)
             document.getElementById("chat-message").value = ""
             }
-            })
-
+            }) 
         }
     }
     pull_data.open("GET", "chatPage.html" , true)
@@ -103,21 +114,38 @@ function openChat(chat_id){
     closeStartConv()
 }
 
-function displayChat(chatInformation){
-    for(var i = 0; i <chatInformation.length; i++){
-        console.log(chatInformation.length)
-    document.getElementById("received-messages").innerHTML += "<div class='single-message'>" + chatInformation[i] +"</div>"
+
+function displayChat(chat_id){
+    document.getElementById("chat-middle-display").innerHTML = ""
+    for(var i = 0; i < texts[chat_id].length; i++){
+        if(i < chatOpenCounter[chat_id]){
+            document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + texts[chat_id][i] +"</div>"
+        }
+        else{
+            var node = document.createElement("DIV")
+            node.setAttribute('class','sent-message')
+            var textnode = document.createTextNode(texts[chat_id][i]);
+            node.appendChild(textnode);
+            document.getElementById("chat-middle-display").appendChild(node);
+
+        }
     }
 }
-
 function sendChat(chat_id){
     var message = document.getElementById("chat-message").value
-    // chatInformation[chat_id][i].push(message)
-    // console.log(chatInformation)
-    
+    texts[chat_id].push(message)
+    displayChat(chat_id)
 }
 
+
+    // var node = document.createElement("<div>");
+    // var textnode = document.createTextNode(message);
+    // node.appendChild(textnode);
+    // document.getElementById("myList").appendChild(node);
+
+
+
 function logOut(){
-    window.localStorage.removeItem("userNAME")
+    // window.localStorage.removeItem("userNAME")
     window.location.replace("../index.html")
 }

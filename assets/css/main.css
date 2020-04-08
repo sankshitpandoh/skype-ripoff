@@ -209,21 +209,27 @@ span{
 }
 #right-bar #chat-middle-display{
     margin-bottom: 50px;
+    margin-top: 116px;
     width: 100%;
+    overflow-y: scroll;
 }
-#right-bar #chat-middle-display #received-messages{
-    width: 50%;
-}
-#right-bar #chat-middle-display #sent-messages{
-    width: 50%;
-}
-
-#right-bar #chat-middle-display #received-messages .single-message{
+#right-bar #chat-middle-display .single-message{
     background-color: #c47500;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
     color: white;
+    margin-right: auto;
+    max-width: 50%;
+}
+#right-bar #chat-middle-display .sent-message{
+    background-color: #141416;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-left: auto;
+    max-width: 50%;
 }
 #right-bar .chat-bottom-bar{
     height: 50px;
