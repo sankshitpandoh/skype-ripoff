@@ -27,6 +27,13 @@ span{
     justify-content: flex-end;
     background-color: #ff9800;
 }
+#inner-top-pop h2{
+    font-size: 75px;
+    text-align: center;
+    width: 100%;
+    font-family: Cataclysmo;
+    color: black;
+}
 #inner-top-pop #close{
     cursor: pointer;
     font-size: 25px;
@@ -62,7 +69,7 @@ span{
 }
 .left-bar #chats{
     overflow-y: scroll;
-    height: 100vh;
+    height: 78vh;
 
 }
 .opened-chat, .opened-chat:hover{
@@ -303,6 +310,30 @@ span{
     font-size: 40px;
     animation: ringing 2s infinite;
 }
+#call-pop-up h4{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+#call-pop-up .cancel-call{
+    width: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    margin: 0 auto;
+    font-size: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#call-pop-up .cancel-call:hover{
+    width: 200px;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 25px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+/* keyframes / animations  */
 @keyframes ringing {
     0% {
       -webkit-transform: rotate(-12deg);
@@ -394,26 +425,3 @@ span{
       transform: rotate(0deg);
     }
   }
-#call-pop-up h4{
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-#call-pop-up .cancel-call{
-    width: 200px;
-    background-color: white;
-    color: black;
-    border-radius: 25px;
-    margin: 0 auto;
-    font-size: 25px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-#call-pop-up .cancel-call:hover{
-    width: 200px;
-    background-color: #ff9800;
-    color: white;
-    border-radius: 25px;
-    margin: 0 auto;
-    font-size: 25px;
-}
-

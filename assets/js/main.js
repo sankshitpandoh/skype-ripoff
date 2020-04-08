@@ -86,7 +86,7 @@ function singleCall(){
 }
 
 function startConv(){
-    document.getElementById("pop-space").innerHTML = "<div id='pop-up'><div id='inner-pop'><div id='inner-top-pop'><i id='close' class='fa fa-times' onclick='closeStartConv()'></i></div><div id='main-top-pop'></div></div></div>" 
+    document.getElementById("pop-space").innerHTML = "<div id='pop-up'><div id='inner-pop'><div id='inner-top-pop'><h2>Contacts</h2><i id='close' class='fa fa-times' onclick='closeStartConv()'></i></div><div id='main-top-pop'></div></div></div>" 
     for ( i=0; i < chat_data.people.length; i++){
         document.getElementById("main-top-pop").innerHTML += "<a class='single-people' href='javascript:void(0)' onclick='openChat(this.id)' id='" + i + "'>" + "<p>" +chat_data.people[i].firstName + "</p></a>"
         }
