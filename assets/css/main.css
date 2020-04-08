@@ -209,14 +209,22 @@ span{
 }
 #right-bar #chat-middle-display{
     margin-bottom: 50px;
+    width: 100%;
 }
-#right-bar #chat-middle-display .single-message{
-    max-width: 50%;
-    background-color: red;
-    margin: 5px;
-    border-radius: 5px;
+#right-bar #chat-middle-display #received-messages{
+    width: 50%;
+}
+#right-bar #chat-middle-display #sent-messages{
+    width: 50%;
 }
 
+#right-bar #chat-middle-display #received-messages .single-message{
+    background-color: #c47500;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
 #right-bar .chat-bottom-bar{
     height: 50px;
     position: absolute;
@@ -225,7 +233,6 @@ span{
     right: 0;
     border-top: 1px solid #31313A;
     background-color: black;
-
 }
 #right-bar .chat-bottom-bar #chat-message{
     width: 500px;

@@ -106,7 +106,7 @@ function openChat(chat_id){
 function displayChat(chatInformation){
     for(var i = 0; i <chatInformation.length; i++){
         console.log(chatInformation.length)
-    document.getElementById("chat-middle-display").innerHTML += "<div class='single-message'>" + chatInformation[i] +"</div>"
+    document.getElementById("received-messages").innerHTML += "<div class='single-message'>" + chatInformation[i] +"</div>"
     }
 }
 

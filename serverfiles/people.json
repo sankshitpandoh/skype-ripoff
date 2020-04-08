@@ -3,7 +3,7 @@
     "lastOnline":"few minutes ago",
     "messages": [
       {
-        "message": "Hey long time"
+        "message": "Hey! long time"
       },
       {
         "message": "How have you been?"
@@ -17,47 +17,235 @@
     ]
   },
   { "firstName":"Shaifali Gorwadia" ,
-    "lastOnline":"online"
+    "lastOnline":"online",
+    "messages": [
+      {
+        "message": "Hey there"
+      },
+      {
+        "message": "Is Groundpe up and running?"
+      }
+    ]
   },
   { "firstName":"Krunal Kumar Patel" ,
-    "lastOnline":"10:25"
+    "lastOnline":"10:25",
+    "messages": [
+      {
+        "message": "Send me GroundPe's repo link"
+      },
+      {
+        "message": "I have some ideas in my mind"
+      },
+      {
+        "message": "I think you'd like those"
+      }
+    ]
   },
   { "firstName":"Aakash Odedara" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "I hope this lockdown gets over soon!"
+      },
+      {
+        "message": "I miss going out"
+      }
+    ]
   },
   { "firstName":"Aum Shukla" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "How do I get my beard trimmed during this covid lockdown?"
+      }
+    ]
   },
   { "firstName":"Rajvi Dobariya" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Deeba" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Rahul Kumar" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Spock" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Anna" ,
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Justin Roy",
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"TuPac",
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Lil Uzi Vert",
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"21 Savage",
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Busta Rhymes",
-    "lastOnline":"few minutes ago"
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
   },
   { "firstName":"Elliot Alderson",
-    "lastOnline":"few minutes ago"}
+    "lastOnline":"few minutes ago",
+    "messages": [
+      {
+        "message": "Hey long time"
+      },
+      {
+        "message": "How have you been?"
+      },
+      {
+        "message": "Heard you making a rip off for skype?"
+      },
+      {
+        "message": "How are things going so far?"
+      }
+    ]
+  }
+    
 ]}
